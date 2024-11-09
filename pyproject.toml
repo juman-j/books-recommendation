@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "books_recommendation"
+version = "0.1.0"
+description = ""
+authors = ["Artem Sorokin <artem.sorokin@tuta.io>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.11.10"
+pandas = "^2.2.0"
+scipy = "^1.12.0"
+python-dotenv = "^1.0.1"
+scikit-learn = "^1.4.0"
+psycopg2-binary = "^2.9.9"
+jq = "^1.6.0"
+loguru = "^0.7.2"
+streamlit = "^1.35.0"
+watchdog = "^4.0.0"
+streamlit-extras = "^0.4.0"
+numpy = "1.26.4"
+matplotlib = "^3.8.3"
+pyodbc = "^5.1.0"
+sqlalchemy = "^2.0.30"
+esdbclient = "^1.1"
+simplejson = "^3.19.2"
+beautifulsoup4 = "^4.12.3"
+fastapi = "^0.115.0"
+pyjwt = "^2.9.0"
+uvicorn = "^0.31.0"
+ipykernel = "^6.29.5"
+
+
+[build-system]
+requires = ["poetry-core>=1.8.3"]
+build-backend = "poetry.core.masonry.api"

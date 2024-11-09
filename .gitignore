@@ -1,0 +1,5 @@
+poetry.lock
+/data/raw_data
+.env
+/saved_models
+__pycache__
