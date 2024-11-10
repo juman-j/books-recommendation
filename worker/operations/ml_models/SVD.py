@@ -32,19 +32,19 @@ class SurpriseSVDModel(I_Model):
         full_data: pd_DataFrame = dataframes.get("full_data")
 
         self.train_data = Dataset.load_from_df(
-            train_data[["user", "item", "rating"]], reader
+            train_data[["user_id", "isbn", "rating"]], reader
         )
         self.validation_data = Dataset.load_from_df(
-            validation_data[["user", "item", "rating"]], reader
+            validation_data[["user_id", "isbn", "rating"]], reader
         )
         self.test_data = Dataset.load_from_df(
-            test_data[["user", "item", "rating"]], reader
+            test_data[["user_id", "isbn", "rating"]], reader
         )
         self.train_validate_data = Dataset.load_from_df(
-            train_validate_data[["user", "item", "rating"]], reader
+            train_validate_data[["user_id", "isbn", "rating"]], reader
         )
         self.full_data = Dataset.load_from_df(
-            full_data[["user", "item", "rating"]], reader
+            full_data[["user_id", "isbn", "rating"]], reader
         )
 
         self.val_raw_ratings = self.validation_data.raw_ratings

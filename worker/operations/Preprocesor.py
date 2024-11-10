@@ -213,16 +213,6 @@ class Preprocesor:
         test_data.drop(test_data.columns[0], axis=1, inplace=True)
         full_data.drop(full_data.columns[0], axis=1, inplace=True)
 
-        train_data.rename(columns={"user_id": "user", "isbn": "item"}, inplace=True)
-        validation_data.rename(
-            columns={"user_id": "user", "isbn": "item"}, inplace=True
-        )
-        train_validate_data.rename(
-            columns={"user_id": "user", "isbn": "item"}, inplace=True
-        )
-        test_data.rename(columns={"user_id": "user", "isbn": "item"}, inplace=True)
-        full_data.rename(columns={"user_id": "user", "isbn": "item"}, inplace=True)
-
         logger.info("Preprocesing is done.")
 
         return {

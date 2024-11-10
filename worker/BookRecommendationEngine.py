@@ -34,7 +34,6 @@ class BookRecommendationEngine:
                 try:
                     recommendation_service = RecommendationService(event_data)
                     recommendation_service.run()
-                    logger.success("Task is done, waiting for the new events.")
 
                 except KeyboardInterrupt:
                     subscription.stop()
